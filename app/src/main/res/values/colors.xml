@@ -6,4 +6,5 @@
 
     <color name="green500">#4CAF50</color>
     <color name="colorTransparentWhite">#64ffffff</color>
+    <color name="hintColor">#ADADAD</color>
 </resources>
