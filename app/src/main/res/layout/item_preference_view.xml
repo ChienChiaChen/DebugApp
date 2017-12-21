@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        style="@style/SettingItemPanelStyle">
+
+        <ImageView
+            android:id="@+id/item_check_image"
+            android:layout_width="43dp"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/preference_checkbox"
+            android:visibility="gone"
+            tools:ignore="contentDescription"/>
+
+        <ImageView
+            android:id="@+id/item_icon_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            tools:ignore="contentDescription"/>
+
+        <TextView
+            android:id="@+id/item_goto_left_text"
+            style="@style/SettingItemLeftTextStyle"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_icon_image"
+            tools:text="Title"/>
+
+        <TextView
+            android:id="@+id/item_goto_right_text"
+            style="@style/SettingItemValueTextStyle"
+            android:layout_alignBaseline="@+id/item_goto_left_text"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/item_goto_left_text"
+            tools:text="Value"/>
+
+        <TextView
+            android:id="@+id/bc_goto_right_text_hint"
+            style="@style/SettingItemValueTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/item_goto_left_text"
+            tools:text="Hint"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_disable_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+</RelativeLayout>
