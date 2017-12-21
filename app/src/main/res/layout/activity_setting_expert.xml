@@ -8,6 +8,31 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/general_top_bar"
         android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SettingCategoryStyle"
+                android:text="Network"/>
+
+            <LinearLayout
+                android:id="@+id/expert_mode_network_list"
+                style="@style/SettingLinearLayoutPanel"/>
+
+            <TextView
+                style="@style/SettingCategoryStyle"
+                android:text="System Info"/>
+
+            <LinearLayout
+                android:id="@+id/expert_mode_system_info_list"
+                style="@style/SettingLinearLayoutPanel"/>
+
+        </LinearLayout>
+
     </ScrollView>
 
 
