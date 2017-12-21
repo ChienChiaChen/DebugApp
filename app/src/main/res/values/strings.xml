@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DebugAppPractices</string>
+
+    <string name="develop_page" translatable="false">DevelopPage</string>
 </resources>
